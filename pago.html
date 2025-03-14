@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Liss & RICC Glam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Proceso de Pago</h1>
+    </header>
+
+    <main class="pago-container">
+        <div class="pago">
+            <fieldset>
+                <legend> Datos</legend>
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <input type="text" placeholder="Dirección de Envío" required>
+            </fieldset>
+
+            <fieldset>
+                <legend> Método de Pago</legend>
+                <select>
+                    <option>Tarjeta de Crédito</option>
+                    <option>Transferencia Bancaria</option>
+                    <option>Pago en Efectivo</option>
+                </select>
+                <input type="text" placeholder="Número de Tarjeta (Opcional)">
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmación</legend>
+                <p><strong>Total a pagar:</strong> RD$2,300.00</p>
+                <button class="btn-pagar">Finalizar Compra</button>
+            </fieldset>
+        </div>
+    </main>
+
+</body>
+</html>

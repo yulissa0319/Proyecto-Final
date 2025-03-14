@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <main class="carrito-container">
+        <div class="carrito">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Collar de Oro</td>
+                        <td>RD$1,500.00</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>RD$1,500.00</td>
+                        <td><button class="btn-remove">❌</button></td>
+                    </tr>
+                    <tr>
+                        <td>Anillo de Plata</td>
+                        <td>RD$800.00</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>RD$800.00</td>
+                        <td><button class="btn-remove">❌</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="descuento">
+                <label for="codigo">Código de Descuento:</label>
+                <input type="text" id="codigo" placeholder="Ingrese código">
+                <button class="btn-aplicar">Aplicar</button>
+            </div>
+
+            <div class="factura">
+                <h2>Factura</h2>
+                <table class="factura-table">
+                    <tr>
+                        <td>Subtotal:</td>
+                        <td>RD$2,300.00</td>
+                    </tr>
+                    <tr>
+                        <td>Descuento:</td>
+                        <td>RD$0.00</td>
+                    </tr>
+                    <tr class="total-factura">
+                        <td><strong>Total a Pagar:</strong></td>
+                        <td><strong>RD$2,300.00</strong></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="acciones">
+                <button class="btn-vaciar">Vaciar Carrito</button>
+                <button class="btn-pago">Ir a Pagar</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
